@@ -1,14 +1,32 @@
+:root {
+  --black-500: #222831;
+  --black-400: #31363f;
+  --gray: #eeeeee;
+  --accent: #76abae;
+}
+
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Base */
 body {
-    background-color: #222831;
-    color: #EEEEEE;
+  background-color: var(--black-500);
+  color: var(--gray);
 }
 
 /* Clock */
+.clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.alarm-btn {
+  margin-top: 18px;
+}
