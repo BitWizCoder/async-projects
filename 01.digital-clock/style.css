@@ -16,6 +16,7 @@
 body {
   background-color: var(--black-500);
   color: var(--gray);
+  font-family: "Courier New", Courier, monospace;
 }
 
 /* Clock */
@@ -29,9 +30,12 @@ body {
 
 .clock {
   font-size: 62px;
-  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 12px;
 }
 
+.date {
+  font-size: 24px;
+}
 
 .alarm-btn {
   margin-top: 18px;

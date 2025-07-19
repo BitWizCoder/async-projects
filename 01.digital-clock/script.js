@@ -1,20 +1,32 @@
-const clock = document.querySelector(".clock");
+const clockEl = document.querySelector(".clock");
+const dateEl = document.querySelector(".date");
 
-updateClock = () => {
+function updateClock() {
   const time = new Date();
 
   let hours = time.getHours();
-  let minute = time.getMinutes();
+  let minutes = time.getMinutes();
   let seconds = time.getSeconds();
 
   let period = hours >= 12 ? "PM" : "AM";
   hours = hours % 12;
   hours = hours === 0 ? 12 : hours;
 
-  const timeString = `${hours}:${minute}:${seconds} ${period}`;
+  const timeString = `${String(hours).padStart(2, "0")}:${String(
+    minutes
+  ).padStart(2, "0")}:${String(seconds).padStart(2, "0")} ${period}`;
 
-  clock.textContent = timeString;
-};
+  clockEl.textContent = timeString;
+
+  const formatted = time.toLocaleDateString("en-US", {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
+  dateEl.textContent = formatted;
+}
 
 setInterval(updateClock, 1000);
 
