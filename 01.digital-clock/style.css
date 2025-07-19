@@ -19,7 +19,7 @@ body {
 }
 
 /* Clock */
-.clock {
+.clock-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,6 +27,15 @@ body {
   height: 100vh;
 }
 
+.clock {
+  font-size: 62px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
 .alarm-btn {
   margin-top: 18px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
 }
