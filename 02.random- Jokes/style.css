@@ -1,0 +1,36 @@
+:root {
+  --primar-color: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.container {
+  width: 500px;
+  margin: 50px auto;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.joke {
+  width: 500px;
+  margin-bottom: 10px;
+}
+
+.get-joke {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 50px;
+  background-color: #333;
+  color: white;
+  font-size: 18px;
+}
