@@ -24,6 +24,8 @@ body {
 .joke {
   width: 500px;
   margin-bottom: 10px;
+  height: 120px;
+  overflow-y: auto;
 }
 
 .get-joke {
